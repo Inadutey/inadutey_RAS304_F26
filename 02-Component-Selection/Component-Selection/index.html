@@ -29,7 +29,7 @@
 
     
       
-        <title>Component Selection Example - RAS 304 Data Sheet Template</title>
+        <title>Component Selection - RAS 304 Data Sheet Template</title>
       
     
     
@@ -92,7 +92,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#examples" class="md-skip">
+        <a href="#motor-driver-subsystem-hbridge" class="md-skip">
           Skip to content
         </a>
       
@@ -127,7 +127,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Component Selection Example
+              Component Selection
             
           </span>
         </div>
@@ -559,24 +559,8 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
       
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Component Selection Example
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -585,7 +569,7 @@
   <span class="md-ellipsis">
     
   
-    Component Selection Example
+    Component Selection
   
 
     
@@ -594,62 +578,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
-      
-        <li class="md-nav__item">
-  <a href="#examples" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Examples
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Examples">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#style-1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Style 1
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#style-2" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Style 2
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
       
     </li>
   
@@ -910,53 +838,8 @@
   
   
   
+    
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
-      
-        <li class="md-nav__item">
-  <a href="#examples" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Examples
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Examples">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#style-1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Style 1
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#style-2" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Style 2
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
   
 </nav>
                   </div>
@@ -1029,107 +912,123 @@
   
 
 
-  <h1>Component Selection Example</h1>
-
-<h2 id="examples">Examples</h2>
-<h3 id="style-1">Style 1</h3>
-<blockquote>
-<p>This is the example found in the assignment, uses more html</p>
-</blockquote>
-<p><em>Table 1: Example component selection</em></p>
-<p><strong>External Clock Module</strong></p>
+<h1 id="motor-driver-subsystem-hbridge">Motor Driver Subsystem – H‑Bridge</h1>
 <table>
 <thead>
 <tr>
-<th><strong>Solution</strong></th>
-<th><strong>Pros</strong></th>
-<th><strong>Cons</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><br>Option 1.<br> XC1259TR-ND surface mount crystal<br>$1/each<br><a href="http://www.digikey.com/product-detail/en/ECS-40.3-S-5PX-TR/XC1259TR-ND/827366">link to product</a></td>
-<td>* Inexpensive[^1]<br>* Compatible with PSoC<br>* Meets surface mount constraint of project</td>
-<td>* Requires external components and support circuitry for interface<br>* Needs special PCB layout.</td>
-</tr>
-<tr>
-<td><br>* Option 2. <br>* CTX936TR-ND surface mount oscillator <br>* $1/each <br>* <a href="http://www.digikey.com/product-detail/en/636L3I001M84320/CTX936TR-ND/2292940">Link to product</a></td>
-<td>* Outputs a square wave <br>* Stable over operating temperature <br> * Direct interface with PSoC (no external circuitry required) range</td>
-<td>* More expensive <br>* Slow shipping speed</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Choice:</strong> Option 2: CTX936TR-ND surface mount oscillator</p>
-<p><strong>Rationale:</strong> A clock oscillator is easier to work with because it requires no external circuitry in order to interface with the PSoC. This is particularly important because we are not sure of the electrical characteristics of the PCB, which could affect the oscillation of a crystal. While the shipping speed is slow, according to the website if we order this week it will arrive within 3 weeks.</p>
-<h3 id="style-2">Style 2</h3>
-<blockquote>
-<p>Also acceptable, more markdown friendly</p>
-</blockquote>
-<p><strong>External Clock Module</strong></p>
-<ol>
-<li>
-<p>XC1259TR-ND surface mount crystal</p>
-<p></p>
-<ul>
-<li>$1/each</li>
-<li><a href="http://www.digikey.com/product-detail/en/ECS-40.3-S-5PX-TR/XC1259TR-ND/827366">link to product</a></li>
-</ul>
-<table>
-<thead>
-<tr>
+<th>Option</th>
 <th>Pros</th>
 <th>Cons</th>
+<th>Photo</th>
+<th>Link</th>
+<th>Cost</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Inexpensive</td>
-<td>Requires external components and support circuitry for interface</td>
-</tr>
-<tr>
-<td>Compatible with PSoC</td>
-<td>Needs special PCB layout.</td>
-</tr>
-<tr>
-<td>Meets surface mount constraint of project</td>
+<td>L298N Dual H‑Bridge</td>
+<td>...</td>
+<td>...</td>
 <td></td>
+<td><a href="#">Digikey</a></td>
+<td>$15.39</td>
+</tr>
+<tr>
+<td>DRV8833</td>
+<td>...</td>
+<td>...</td>
+<td></td>
+<td><a href="#">Mouser</a></td>
+<td>$8.99</td>
+</tr>
+<tr>
+<td>A3909GLYTR‑T</td>
+<td>...</td>
+<td>...</td>
+<td></td>
+<td><a href="#">Allegro</a></td>
+<td>$1.82</td>
 </tr>
 </tbody>
 </table>
-</li>
-<li>
-<p>CTX936TR-ND surface mount oscillator</p>
-<p></p>
-<ul>
-<li>$1/each</li>
-<li><a href="http://www.digikey.com/product-detail/en/636L3I001M84320/CTX936TR-ND/2292940">Link to product</a></li>
-</ul>
+<p><strong>Choice:</strong> DRV8833<br>
+<strong>Rationale:</strong> (your explanation here)</p>
+<hr>
+<h1 id="rightleft-dc-motor">Right/Left DC Motor</h1>
 <table>
 <thead>
 <tr>
+<th>Option</th>
 <th>Pros</th>
 <th>Cons</th>
+<th>Photo</th>
+<th>Link</th>
+<th>Cost</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Outputs a square wave</td>
-<td>More expensive</td>
-</tr>
-<tr>
-<td>Stable over operating temperature</td>
-<td>Slow shipping speed</td>
-</tr>
-<tr>
-<td>Direct interface with PSoC (no external circuitry required) range</td>
+<td>24V 1800RPM Motor</td>
+<td>...</td>
+<td>...</td>
 <td></td>
+<td><a href="#">Product link</a></td>
+<td>$19.95</td>
+</tr>
+<tr>
+<td>Johnson Electric Motor</td>
+<td>...</td>
+<td>...</td>
+<td></td>
+<td><a href="#">Product link</a></td>
+<td>$8.98</td>
+</tr>
+<tr>
+<td>BOJACK Type 130</td>
+<td>...</td>
+<td>...</td>
+<td></td>
+<td><a href="#">Product link</a></td>
+<td>$8.98</td>
 </tr>
 </tbody>
 </table>
-</li>
-</ol>
-<p><strong>Choice:</strong> Option 2: CTX936TR-ND surface mount oscillator</p>
-<p><strong>Rationale:</strong> A clock oscillator is easier to work with because it requires no external circuitry in order to interface with the PSoC. This is particularly important because we are not sure of the electrical characteristics of the PCB, which could affect the oscillation of a crystal. While the shipping speed is slow, according to the website if we order this week it will arrive within 3 weeks.</p>
+<p><strong>Choice:</strong> Johnson Electric<br>
+<strong>Rationale:</strong> (your explanation here)</p>
+<hr>
+<h1 id="voltage-regulator-5v-rail">Voltage Regulator (5V Rail)</h1>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Pros</th>
+<th>Cons</th>
+<th>Photo</th>
+<th>Link</th>
+<th>Price</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Microchip LDO</td>
+<td>...</td>
+<td>...</td>
+<td></td>
+<td><a href="#">Product link</a></td>
+<td>$2.41</td>
+</tr>
+<tr>
+<td>Automotive‑Grade Regulator</td>
+<td>...</td>
+<td>...</td>
+<td></td>
+<td><a href="#">Product link</a></td>
+<td>$8.99</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Choice:</strong> Microchip LDO<br>
+<strong>Rationale:</strong> (your explanation here)</p>
 
 
 
