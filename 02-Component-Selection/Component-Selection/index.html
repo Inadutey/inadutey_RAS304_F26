@@ -926,33 +926,31 @@
 </thead>
 <tbody>
 <tr>
-<td>L298N Dual H‑Bridge</td>
-<td>...</td>
-<td>...</td>
-<td></td>
-<td><a href="#">Digikey</a></td>
+<td><strong>L298N Dual H‑Bridge (Arduino Albers)</strong></td>
+<td>Inexpensive dual‑channel driver; can control two DC motors (Left + Right) with forward/reverse. Widely used and documented. Tons of tutorials, wiring diagrams, and example code online. Built‑in flyback diodes protect the driver from motor inductive spikes. Simple to interface with PIC, Arduino, Raspberry Pi. On‑board 5V regulator.</td>
+<td>Large voltage drop (~2V) → motors receive less voltage, reducing torque and speed. Low efficiency (bipolar transistors) → runs hot and wastes power. Limited current capability (0.8–1.2A continuous). Old design replaced by MOSFET drivers (TB6612FNG, DRV8833, BTS7960). Bulky module. Weak 5V regulator → often must be disabled.</td>
+<td><em>(add image)</em></td>
+<td>product link</td>
 <td>$15.39</td>
 </tr>
 <tr>
-<td>DRV8833</td>
-<td>...</td>
-<td>...</td>
-<td></td>
-<td><a href="#">Mouser</a></td>
+<td><strong>DRV8833 – KOOBOOK 1.5A Dual H‑Bridge</strong></td>
+<td>Modern MOSFET design → far more efficient than L298N (almost no voltage drop). Low heat generation → runs cool under load. Wide voltage range (2.7V–10.8V). Dual motor support (forward/reverse). High efficiency → better motor torque. Low standby current → ideal for low‑power embedded systems.</td>
+<td>Lower maximum current (1.5A peak, ~1A continuous). Not ideal for large or high‑torque motors. Not suitable for 12V motors. Small module size → easier to damage. Requires careful wiring (small pins). No built‑in 5V regulator.</td>
+<td><em>(add image)</em></td>
+<td>product link</td>
 <td>$8.99</td>
 </tr>
 <tr>
-<td>A3909GLYTR‑T</td>
-<td>...</td>
-<td>...</td>
-<td></td>
-<td><a href="#">Allegro</a></td>
+<td><strong>A3909GLYTR‑T (Allegro)</strong></td>
+<td>Modern MOSFET design → highly efficient, minimal voltage drop. Dual H‑bridge → can independently drive two DC motors or one stepper. Wide voltage range (2.4V–5.5V). Low power consumption → excellent for battery‑powered devices. High PWM frequency → smooth motor control, low audible noise.</td>
+<td>Very small QFN package → extremely difficult to solder by hand. Low voltage limit (max ~5.5V). Lower current capability (500–700mA per channel). Requires external components (decoupling caps, layout). Bare IC → no screw terminals or breakout board.</td>
+<td><em>(add image)</em></td>
+<td>product link</td>
 <td>$1.82</td>
 </tr>
 </tbody>
 </table>
-<p><strong>Choice:</strong> DRV8833<br>
-<strong>Rationale:</strong> (your explanation here)</p>
 <hr>
 <h1 id="rightleft-dc-motor">Right/Left DC Motor</h1>
 <table>
@@ -968,35 +966,72 @@
 </thead>
 <tbody>
 <tr>
-<td>24V 1800RPM Motor</td>
-<td>...</td>
-<td>...</td>
-<td></td>
-<td><a href="#">Product link</a></td>
+<td><strong>24V – 1800 RPM Slow‑Speed DC Motor</strong></td>
+<td>Very inexpensive → great for budget builds or prototypes. Lightweight and compact → easy to mount. High RPM → good for lightweight applications. Easy to power (3–12V). Widely available.</td>
+<td>Low torque → struggles with heavier loads. No datasheet → specs vary widely. Inconsistent quality (eBay). No encoder → cannot measure speed/position. Short lifespan → brushes wear quickly. RPM fluctuates with voltage.</td>
+<td><em>(add image)</em></td>
+<td>product link</td>
 <td>$19.95</td>
 </tr>
 <tr>
-<td>Johnson Electric Motor</td>
-<td>...</td>
-<td>...</td>
-<td></td>
-<td><a href="#">Product link</a></td>
+<td><strong>JOHNSON ELECTRIC – C4557‑60003 – HC615LG – 65701 (6–18VDC)</strong></td>
+<td>Higher torque → better for wheels, lifting loads, pushing weight. Metal housing → more durable. Better suited for real robotics → handles friction and load. More stable RPM under load.</td>
+<td>Higher current draw → may exceed limits of DRV8833/TB6612FNG. No datasheet → exact torque, RPM, stall current unknown. Bulkier and heavier → requires stronger mounting. Quality varies (eBay). No encoder. May require heatsinking.</td>
+<td><em>(add image)</em></td>
+<td>product link</td>
 <td>$8.98</td>
 </tr>
 <tr>
-<td>BOJACK Type 130</td>
-<td>...</td>
-<td>...</td>
-<td></td>
-<td><a href="#">Product link</a></td>
+<td><strong>BOJACK Type 130 EK1450 Mini DC Motors (3–6V)</strong></td>
+<td>Comes in a multi‑pack → good for testing or replacing motors. Standardized size (130) → easy to find mounts. Decent RPM → good for small robots or fans. Runs on 3–6V → compatible with DRV8833. Better consistency than random eBay motors.</td>
+<td>Low torque → not suitable for heavy loads. Still lacks detailed datasheets. No encoder → cannot measure rotation or speed. Not designed for 9–12V systems → may overheat or burn out. Not ideal for long‑term robotics → hobby‑grade.</td>
+<td><em>(add image)</em></td>
+<td>product link</td>
 <td>$8.98</td>
 </tr>
 </tbody>
 </table>
-<p><strong>Choice:</strong> Johnson Electric<br>
-<strong>Rationale:</strong> (your explanation here)</p>
 <hr>
 <h1 id="voltage-regulator-5v-rail">Voltage Regulator (5V Rail)</h1>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Pros</th>
+<th>Cons</th>
+<th>Photo</th>
+<th>Link</th>
+<th>Price</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Microchip LDO (SOT‑23‑5)</strong></td>
+<td>Ultra‑low dropout → maintains stable 5V output even when input voltage is only slightly higher. Very low quiescent current → excellent for battery‑powered systems. High output accuracy → tight regulation for sensitive logic circuits. Built‑in protection (thermal shutdown + current limiting). Small footprint → ideal for compact PCBs. Low noise output → good for analog circuits and microcontroller logic.</td>
+<td>Low current capability (300–500mA) → not enough for motors. Requires careful PCB layout. Linear regulator → inefficient when dropping from high input voltages (9V→5V). Generates heat under load. Not ideal for electromechanical systems → best for logic only.</td>
+<td><em>(add image)</em></td>
+<td>product link</td>
+<td>$2.41</td>
+</tr>
+<tr>
+<td><strong>Automotive‑Grade 5V Regulator</strong></td>
+<td>Automotive‑grade reliability → designed for harsh environments, vibration, temperature extremes. Very stable 5V output → excellent regulation. Low dropout voltage. High input voltage tolerance (up to 40V). Built‑in protections (overcurrent, thermal shutdown, reverse‑battery). Good for embedded systems → robust and predictable.</td>
+<td>Lower current capability (150–300mA). Linear regulator → inefficient for high voltage drops (12V→5V). Requires heatsinking under moderate load. More expensive than basic LDOs. Not ideal for powering electromechanical components → best for logic.</td>
+<td><em>(add image)</em></td>
+<td>product link</td>
+<td>$8.99</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h1 id="final-choices-fill-these-in">Final Choices (Fill these in)</h1>
+<p><strong>Motor Driver Choice:</strong><br>
+<strong>Rationale:</strong>  </p>
+<p><strong>DC Motor Choice:</strong><br>
+<strong>Rationale:</strong>  </p>
+<p><strong>Voltage Regulator Choice:</strong><br>
+<strong>Rationale:</strong>  </p>
+<h1 id="voltage-regulator-5v-rail_1">Voltage Regulator (5V Rail)</h1>
 <table>
 <thead>
 <tr>
