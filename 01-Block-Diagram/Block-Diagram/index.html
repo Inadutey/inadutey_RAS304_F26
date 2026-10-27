@@ -22,21 +22,21 @@
       
       
       <link rel="icon" href="../../static/logo304.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.0">
             
 
     
 
     
       
-        <title>Individal Block Diagram - RAS 304 Data Sheet Template</title>
+        <title>Block Diagram - RAS 304 Data Sheet Template</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.57a0d79d.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.fb2fffe2.min.css">
       
       
 
@@ -91,11 +91,6 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
-        
-        <a href="#overview" class="md-skip">
-          Skip to content
-        </a>
-      
     </div>
     <div data-md-component="announce">
       
@@ -127,7 +122,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Individal Block Diagram
+              Block Diagram
             
           </span>
         </div>
@@ -505,24 +500,6 @@
       
       
       
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Individal Block Diagram
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -530,7 +507,7 @@
   <span class="md-ellipsis">
     
   
-    Individal Block Diagram
+    Block Diagram
   
 
     
@@ -539,45 +516,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
-      
-        <li class="md-nav__item">
-  <a href="#overview" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Overview
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#example-block-diagram" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Example Block Diagram
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
       
     </li>
   
@@ -894,36 +832,6 @@
   
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
-      
-        <li class="md-nav__item">
-  <a href="#overview" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Overview
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#example-block-diagram" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Example Block Diagram
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -995,30 +903,45 @@
   
 
 
-  <h1>Individal Block Diagram</h1>
+  <h1>Block Diagram</h1>
 
-<h2 id="overview">Overview</h2>
-<p>This needs to be updated with a brief purpose for having the block diagram.
-Things to mention are:
-* power levels
-* sensor
-* Actuator
-* team connections
-* Power source
-* ...</p>
-<p>To get some initial formatting help, one can view <a href="https://embedded-systems-design.github.io/EGR304DataSheetTemplate/Appendix/basic-markdown-examples/">"here"</a> some basic techniques.</p>
-<h2 id="example-block-diagram">Example Block Diagram</h2>
-<p>Showing an example of how to import a screenshot of the block diagram created outside of git and brought into a page.</p>
-<p></p>
+<p><strong>Motor Control Subsystem</strong></p>
+<p><strong>Overview</strong></p>
+<p>This block diagram illustrates the Motor Control and Power Distribution subsystem used in the EGR 304 robotic platform. The subsystem is responsible for regulated power distribution, motor control, feedback monitoring, and communication between the control electronics and mechanical drive components.</p>
+<p>The design utilizes a 12 VDC power source protected by a fuse and regulated to provide stable operating voltages for the control circuitry. A Curiosity Nano microcontroller generates the control signals required by the left and right motor driver circuits. These motor drivers provide the necessary current and voltage to operate the differential drive motors.</p>
+<p>Encoder feedback from both motors is routed back to the microcontroller, allowing motor speed and position monitoring. Debug LEDs are included to provide visual indicators during testing, troubleshooting, and normal operation.</p>
+<p><strong>Power Source</strong></p>
+<p>• 12 V DC Barrel Jack Input
+• Fuse Protection Circuit
+• Voltage Regulation Circuit
+• Decoupling Capacitor Network
+• Common Ground Reference</p>
+<p><strong>Controller</strong></p>
+<p>• Curiosity Nano Microcontroller</p>
+<p><strong>Actuators</strong></p>
+<p>• Left Drive Motor
+• Right Drive Motor</p>
+<p><strong>Sensors</strong>
+• Motor Encoder Feedback Signals
+• User Input Switch</p>
+<p><strong>Indicators</strong></p>
+<p>• Status LED
+• Debug LEDs</p>
+<p><strong>Team Interfaces</strong></p>
+<p>• Connector interface for signal routing and communication between subsystem components and team-designed modules</p>
+<p><strong>Block Diagram</strong>
+<a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://github.com/user-attachments/assets/62188e82-06a0-43bd-a41d-1f82157c211e" data-desc-position="bottom"><img width="1584" height="1060" alt="image" src="https://github.com/user-attachments/assets/62188e82-06a0-43bd-a41d-1f82157c211e"></a></p>
+<p><strong>Functional Description</strong></p>
+<p>Power enters the subsystem through a 12 VDC barrel jack and passes through a protective fuse before being distributed throughout the system. A voltage regulator conditions the incoming voltage and provides the required operating voltage for the control electronics.</p>
+<p>The Curiosity Nano microcontroller processes control logic and outputs motor control signals to the left and right motor driver circuits. Each motor driver independently controls a DC motor, enabling differential drive operation and directional control.</p>
+<p>Encoder feedback from each motor is returned to the microcontroller where it can be used to monitor motor performance and support future closed-loop control implementations. Status LEDs and debugging indicators provide visual confirmation of subsystem activity and assist in system validation.</p>
+<p>This subsystem serves as the central interface between the power distribution network, control electronics, sensor feedback circuits, and mechanical drive components of the robotic platform.</p>
 
 
 
 
 
 
-
-  
-  
 
 
 
@@ -1120,10 +1043,10 @@ Things to mention are:
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "toc.follow", "navigation.top", "navigation.path", "navigation.indexes", "navigation.prune", "content.action.edit", "navigation.footer"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "toc.follow", "navigation.top", "navigation.path", "navigation.indexes", "navigation.prune", "content.action.edit", "navigation.footer"], "search": "../../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      <script src="../../assets/javascripts/bundle.c21346df.min.js"></script>
       
         <script src="../../javascripts/mathjax.js"></script>
       
