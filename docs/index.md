@@ -17,18 +17,14 @@ for<br>
 
 ## Introduction
 
-* This datasheet will share the progression of my work for our given project found in our RAS 304 class. As each member has a different system they're working on, this website will have the information of my Components, BOM (Bill Of Materials), and other essential information to have our project organized. 
+*This datasheet documents my contributions to the RAS 304 project and highlights the development of my assigned subsystem. It includes information on component selection, the Bill of Materials (BOM), design documentation, and other key project deliverables used to support the overall system design.
 
 ### Project Summary
 
-* Our vision is to create a Floor Mapping Robot. Our goal is to use Microcontrollers and provide the most effective mapping robot for Homeowners, Sport Managers, and Construction workers. through the duration of this project, I contribute to the Motor Drive Subsystem, that will provide the remote controlled movement aspect of our robot.
+* Our team's objective is to develop a Floor Mapping Robot that utilizes microcontroller-based technology to provide efficient and reliable mapping capabilities for homeowners, facility managers, and construction professionals. My primary contribution to this project is the Motor Drive Subsystem, which is responsible for controlling the movement and mobility of the robot.
 
 **Mission Statements**
-* Improve our understanding of mechantronics.
-Design a project that is simplistic and efficient.
-Discuss and learn with the company of other engineers; gaining their perspective.
-Gain confidence in our ability to complete a project from start to finish.
-Through this design we can become recognized in regenerative breaking technology.
+* Expand our understanding of mechatronic system design through hands-on engineering experience. Develop a solution that is both efficient and practical while strengthening teamwork, communication, and problem-solving skills. Successfully complete a project from concept to implementation while exploring innovative technologies and design approaches.
 * Add context that ties into the link to your [team report.][(https://embedded-systems-design.github.io/EGR304TeamTemplate/)
 ](https://ras4-f26-2028-team-1.github.io/RAS304-F26-team1.github.io/) 
 
