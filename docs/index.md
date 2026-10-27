@@ -23,7 +23,7 @@ for<br>
 
 * Our vision is to create a Floor Mapping Robot. Our goal is to use Microcontrollers and provide the most effective mapping robot for Homeowners, Sport Managers, and Construction workers. through the duration of this project, I contribute to the Motor Drive Subsystem, that will provide the remote controlled movement aspect of our robot.
 
-  Mission Statements
+**Mission Statements**
 * Improve our understanding of mechantronics.
 Design a project that is simplistic and efficient.
 Discuss and learn with the company of other engineers; gaining their perspective.
