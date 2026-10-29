@@ -8,7 +8,8 @@ This schematic shows the Motor Control subsystem used in our robotic platform. T
 
 
 
-**Figure ##:**<img width="1286" height="956" alt="image" src="https://github.com/user-attachments/assets/256484d4-17c3-4442-8d60-383c08b01505" />
+**Figure ##:**<img width="1106" height="824" alt="image" src="https://github.com/user-attachments/assets/8a95fef7-38a6-49d6-ad28-4af1019896a4" />
+
 
 
 
