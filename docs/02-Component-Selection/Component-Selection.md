@@ -1,6 +1,6 @@
-# Robot Vacuum Subsystem Research and Component Selection
+# Robot Motor Driver Component Selection
 
-## 1. Motor Driver Subsystem – H-Bridge
+## 1. Motor Subsystem – H-Bridge
 
 | Option | Pros | Cons | Photo | Link | Cost |
 |---|---|---|---|---|---|
