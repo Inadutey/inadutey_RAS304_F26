@@ -1,21 +1,13 @@
 ---
-title: Power Budget
+title:  Motor Subsystem Power Budget
 ---
 
-## Overview
-Write a overview of what you did and why you did a Power Budget.
+## Overview:
+This power budget was created to calculate the current requirements of the robot and verify that the selected battery and power system can safely support all components. It helps ensure reliable operation and prevents power-related issues during use. this is to insure when creating our Motor driver Subsystem, all of our parts correspond.  
 
-> Capture your power budge as a image to display. Take time to get clean breaks and a well organized layout.
 
-![budget1](budgetPg1.png){style width:"350" height:"300;"}
+<img width="3001" height="2921" alt="image" src="https://github.com/user-attachments/assets/4427ef44-1b63-4026-82e4-ba093d05340c" />
 
-![budget2](budgetPg2.png){style width:"350" height:"300;"}
-
-![budget3](budgetPg3.png){style width:"350" height:"300;"}
-
-## Conclusions
-
-From the prepare Power Budget, .....
 
 ## Resouces
 
