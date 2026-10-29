@@ -998,7 +998,20 @@
   <h1>Motor Drive Schematic</h1>
 
 <h2 id="overview">Overview</h2>
-<p>This schematic shows the Motor Control subsystem used in our robotic platform. The design includes a 12 V power input, 5 V voltage regulation, a Curiosity Nano microcontroller, and motor driver circuitry used to control the drive motors.</p>
+<p>This schematic illustrates the electrical design of the Motor Driver Subsystem for the Open Field robotic platform. This subsystem uses a Curiosity Nano microcontroller and H-bridge motor driver to control two DC gear motors. The purpose of this subsystem is to provide controlled motor operation for robot navigation and movement throughout the field.</p>
+<p><strong>Circuit Design, Microcontroller and Motor Control</strong></p>
+<p>our Nano acts as the primary controller for the subsystem. GPIO outputs from the microcontroller are connected to the motor driver, allowing the controller to command motor direction and movement. The microcontroller processes software-generated control signals and sends them to the H-bridge, which supplies the necessary power to operate both DC motors.</p>
+<p>The isolates the low-power control circuitry from the higher-current motor circuitry, enabling reliable and efficient motor control.</p>
+<p><strong>Power Supply</strong></p>
+<p>The subsystem receives power through a DC barrel jack input. A fuse is included to protect the circuit from excessive current conditions, while a voltage regulator converts the input voltage into a regulated 5 V supply for the Curiosity Nano and other low-voltage components.</p>
+<p>The Motor driver and DC motors are powered from the motor supply rail, ensuring sufficient current is available for motor operation while maintaining stable logic-level power for the controller.</p>
+<p><strong>User Input</strong></p>
+<p>A pushbutton provides a manual input to the microcontroller for testing and system interaction. The pushbutton is connected with supporting components to ensure reliable signal detection and reduce the effects of electrical noise.</p>
+<p>A status LED with a current-limiting resistor provides visual feedback, allowing users to verify subsystem operation and assist during debugging and testing.</p>
+<p><strong>Electrical Connections</strong></p>
+<p>This schematic includes a ribbon connector for communication with other project subsystems and external hardware. Additional connections are provided for motor outputs, power input, and control signals between the Curiosity Nano and the motor driver. These interfaces allow the Motor  Subsystem to integrate into the overall system.</p>
+<p><strong>Product Requirements</strong></p>
+<p>This subsystem satisfies the needed product requirements by providing precise control of the robot's drive motors. The Curiosity Nano calculates movement commands and sends control signals to the DRV8833 motor driver, which regulates motor direction and operation. Together, these components enable the robot to move, navigate, and respond to control inputs while maintaining safe and reliable operation.</p>
 <p><strong>Figure ##:</strong><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://github.com/user-attachments/assets/8a95fef7-38a6-49d6-ad28-4af1019896a4" data-desc-position="bottom"><img width="1106" height="824" alt="image" src="https://github.com/user-attachments/assets/8a95fef7-38a6-49d6-ad28-4af1019896a4"></a></p>
 <h2 id="resources">Resources</h2>
 <p>The schematic as a PDF download is available <a href="../ExampleSchematic.pdf"><em>here</em></a>, and the Zip folder of the project <a href="../dummyZip.zip"><em>here</em></a>.</p>
