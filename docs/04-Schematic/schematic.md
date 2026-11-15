@@ -36,8 +36,7 @@ This subsystem satisfies the needed product requirements by providing precise co
 
 
 
-**Figure ##:**<img width="1106" height="824" alt="image" src="https://github.com/user-attachments/assets/8a95fef7-38a6-49d6-ad28-4af1019896a4" />
-
+<img width="1898" height="1124" alt="image" src="https://github.com/user-attachments/assets/b95e0d0a-430c-432f-9998-bdc598befda8" />
 
 
 
