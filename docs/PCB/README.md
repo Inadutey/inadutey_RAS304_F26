@@ -12,10 +12,11 @@
 
 ---
 
+<img width="1276" height="802" alt="image" src="https://github.com/user-attachments/assets/f1145f9c-fdec-4e21-873b-94371d81a733" /> 
 
+<img width="1204" height="744" alt="image" src="https://github.com/user-attachments/assets/32df1342-00ad-42fe-8f44-6f22c613ef0c" />
 
 ### PCB Layout
-<img width="1412" height="886" alt="image" src="https://github.com/user-attachments/assets/a63569e5-3ff4-44a5-b739-b9755a9c46e2" />
 
 
 
