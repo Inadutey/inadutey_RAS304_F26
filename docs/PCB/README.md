@@ -8,7 +8,7 @@
 
 
 
-**Designed with:** [KiCad / EasyEDA / Eagle / Altium]
+**Designed with:** [KiCad ]
 
 ---
 
